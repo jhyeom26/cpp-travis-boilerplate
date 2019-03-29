@@ -1,0 +1,11 @@
+
+language: cpp
+
+matrix:
+  include:
+    os: linux
+    dist: trusty
+    sudo: required
+    service: docker
+    script:
+      - sh travis_docker_build.sh
